@@ -26,7 +26,6 @@ export function lev(left, right) {
             const deletions = current[j] + 1;
             const substitutions = prev[j] + (c1 != c2 ? 1 : 0);
 
-
             current.push(Math.min(insertions, deletions, substitutions));
 
             j += 1;
@@ -36,7 +35,7 @@ export function lev(left, right) {
         i += 1;
     }
 
-    return prev[prev.length-1];
+    return prev[prev.length - 1];
 }
 
 // export function z() {
